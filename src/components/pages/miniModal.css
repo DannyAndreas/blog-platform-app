@@ -1,0 +1,48 @@
+.edit-profile-div {
+  width: 30%;
+  background-color: white;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  margin-top: 26px;
+  padding-left: 26px;
+}
+
+.sign-in-div {
+  width: 27%;
+  background-color: white;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  margin-top: 26px;
+  padding-left: 26px;
+}
+.sign-up-div {
+  width: 27%;
+  background-color: white;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  margin-top: 26px;
+  padding-left: 26px;
+}
+
+.centered-title {
+  display: flex;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.email-sign-in {
+  max-width: 90%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.password-sign-in {
+  max-width: 93%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.button-sign-in {
+  font-family: 'Roboto', sans-serif;
+  width: 93%;
+  min-height: 40px;
+}
+
+.my-form-item {
+  max-width: 93%;
+}

@@ -1,0 +1,99 @@
+.header-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 90rem;
+  height: 5rem;
+  padding-right: 1.375rem;
+  padding-left: 1.3125rem;
+  background: white;
+}
+
+.blog-title-text-style {
+  flex: 0 0 auto;
+  padding: 0;
+  margin: 0;
+  font: 400 18px Inter UI;
+  color: rgba(0, 0, 0, 0.85);
+  border: none;
+  background-color: white;
+  box-shadow: none;
+}
+.blog-title-text-style:hover {
+  background-color: white !important;
+  color: blue !important;
+}
+
+.sign-in-container1 {
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 13.3125rem;
+  gap: 40px;
+}
+.sign-up-container {
+  flex: 1 0 auto;
+  margin-left: 2.8125rem;
+}
+.sign-in-container {
+  flex: 1 0 auto;
+  margin-left: 2.8125rem;
+}
+.input-container {
+  box-sizing: border-box;
+  width: 100%;
+  height: 3.1875rem;
+  padding-left: 1.0625rem;
+  font: 400 18px Inter UI;
+  border: 1px solid #52c41a;
+  border-radius: 0.3125rem;
+}
+.input-style-f62::placeholder {
+  color: #52c41a;
+}
+
+.user-container {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 1em;
+  border: 1px transparent solid;
+}
+.user-container:hover {
+  border-color: blue !important;
+  background-color: rgba(255, 255, 255, 0.596) !important;
+}
+
+.create-article-button {
+  color: rgba(82, 196, 26, 1);
+  background-color: white;
+  border: 1px rgba(82, 196, 26, 1) solid;
+}
+
+.log-out-button {
+  color: rgba(245, 34, 45, 1);
+  background-color: white;
+  border: 1px rgba(245, 34, 45, 1) solid;
+}
+
+.log-out-button,
+.create-article-button {
+  transition: background-color 0.3s ease;
+}
+
+.log-out-button:hover {
+  background-color: #f5222d !important;
+  border-color: #f5222d !important;
+}
+
+.create-article-button:hover {
+  background-color: rgba(82, 196, 26, 1) !important;
+  border-color: rgba(82, 196, 26, 1) !important;
+}

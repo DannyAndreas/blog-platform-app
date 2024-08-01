@@ -1,0 +1,42 @@
+body {
+  background-color: rgba(243, 247, 250, 1);
+  display: flex;
+  justify-content: center;
+}
+#root {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.main-content-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 1440px;
+}
+
+.article-card-container3 {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  min-width: 938px;
+  padding-top: 26px;
+  padding-bottom: 14.5px;
+}
+.article-card-container4 {
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 26px;
+  align-items: stretch;
+  justify-content: center;
+}
+a:-webkit-any-link {
+  color: -webkit-link;
+  cursor: pointer;
+  text-decoration: none;
+}

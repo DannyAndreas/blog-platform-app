@@ -1,0 +1,38 @@
+.tags-container {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.oneTagInContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.title {
+  min-width: 95%;
+  max-width: 95%;
+}
+
+.description {
+  min-width: 95%;
+  max-width: 95%;
+}
+
+.body {
+  min-width: 95%;
+  max-width: 95%;
+}
+
+.body-input-text {
+  min-height: 400px !important;
+}
+
+.bold {
+  font-family: 'Roboto';
+  font-weight: bold;
+}

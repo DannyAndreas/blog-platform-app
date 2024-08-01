@@ -1,0 +1,129 @@
+.article-page-container {
+  min-width: 1000px;
+  margin-top: 26px;
+}
+.article-full {
+  width: 70%;
+  background-color: white;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  margin-top: 26px;
+  padding: 0 20px 30px 20px;
+}
+
+.author-full-section {
+  float: right;
+  display: flex;
+  flex-direction: column;
+  min-width: 20%;
+  min-height: 150px;
+}
+
+.tag-container {
+  display: flex;
+}
+
+.author-name-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.author-full-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+}
+.author-name-full-text {
+  flex: 0 0 auto;
+  padding: 0;
+  margin: 10px;
+  font: 400 18px Inter UI;
+  color: rgba(0, 0, 0, 0.85);
+  white-space: pre-wrap;
+}
+
+.full-publication-date-style {
+  flex: 0 0 auto;
+  padding: 0;
+  margin: 0;
+  margin-top: -0.25rem;
+  font: 400 12px Inter UI;
+  color: rgba(0, 0, 0, 0.5);
+  white-space: pre-wrap;
+}
+
+.buttons-info-section {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.button-edit {
+  color: rgba(82, 196, 26, 1);
+  background-color: white;
+  border: 1px rgba(82, 196, 26, 1) solid;
+}
+.button-delete {
+  color: rgba(245, 34, 45, 1);
+  background-color: white;
+  border: 1px rgba(245, 34, 45, 1) solid;
+}
+
+.button-delete,
+.button-edit {
+  transition: background-color 0.3s ease;
+}
+
+.button-delete:hover {
+  background-color: #f5222d !important;
+  border-color: #f5222d !important;
+}
+
+.button-edit:hover {
+  background-color: rgba(82, 196, 26, 1) !important;
+  border-color: rgba(82, 196, 26, 1) !important;
+}
+
+.article-title-style {
+  display: flex;
+  align-items: center;
+}
+.article-title-style-text {
+  margin: 20px 0 5px 0;
+}
+
+.short-discription-text {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.article-title-views-count {
+  flex: 0 0 auto;
+  padding: 0;
+  margin: 0;
+  margin-left: 0.25rem;
+  margin: 20px 0 5px 30px;
+  font: 400 12px Inter UI;
+  color: rgba(0, 0, 0, 0.75);
+  white-space: pre-wrap;
+}
+.like-counter {
+  padding: 0;
+  margin: 0 0 10px 10px;
+}
+
+.heart-icon-liked {
+  color: red;
+}
+
+.heart-icon {
+  color: inherit;
+}
+
+.like-counter-inOne {
+  display: flex;
+  width: 80px;
+  height: 60px;
+  align-items: flex-end;
+  justify-content: center;
+}
