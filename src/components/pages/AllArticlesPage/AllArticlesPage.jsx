@@ -6,8 +6,8 @@ import { Statistic, Tag, Button, message } from 'antd'
 import { parseISO, format } from 'date-fns'
 
 import './AllArticlesPage.css'
-import { likeArticle } from '../../redux/actions/articles/likeArticle'
-import { unlikeArticle } from '../../redux/actions/articles/unlikeArticle'
+import { likeArticle } from '../../../redux/actions/articles/likeArticle'
+import { unlikeArticle } from '../../../redux/actions/articles/unlikeArticle'
 
 const AllArticlesPage = ({ article }) => {
   const { title, favoritesCount, description, createdAt, tagList, author, slug, favorited } = article
@@ -62,9 +62,7 @@ const AllArticlesPage = ({ article }) => {
         <div className="article-card-container2">
           <div className="article-info-container">
             <Link to={`/articles/${slug}`}>
-              <p className="article-title-paragraph">
-                {title.trim() !== '' ? title : 'Title is unavailable'} {/* Заглушка для title */}
-              </p>
+              <p className="article-title-paragraph">{title.trim() !== '' ? title : 'Title is unavailable'}</p>
             </Link>
             <div className="article-view-container">
               <div className="article-views-count-label">
@@ -96,7 +94,7 @@ const AllArticlesPage = ({ article }) => {
               </div>
             </div>
             <p className="article-content-text-style">
-              {description.trim() !== '' ? description : 'Description is unavailable'} {/* Заглушка для description */}
+              {description.trim() !== '' ? description : 'Description is unavailable'}
             </p>
           </div>
         </div>

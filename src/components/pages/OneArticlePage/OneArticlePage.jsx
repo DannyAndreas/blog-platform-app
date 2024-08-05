@@ -6,10 +6,10 @@ import { HeartOutlined, HeartFilled } from '@ant-design/icons'
 import { parseISO, format } from 'date-fns'
 import ReactMarkdown from 'react-markdown'
 
-import { fetchArticle } from '../../redux/actions/articles/fetchArticle'
-import { deleteArticle } from '../../redux/actions/articles/deleteArticle'
-import { likeArticle } from '../../redux/actions/articles/likeArticle'
-import { unlikeArticle } from '../../redux/actions/articles/unlikeArticle'
+import { fetchArticle } from '../../../redux/actions/articles/fetchArticle'
+import { deleteArticle } from '../../../redux/actions/articles/deleteArticle'
+import { likeArticle } from '../../../redux/actions/articles/likeArticle'
+import { unlikeArticle } from '../../../redux/actions/articles/unlikeArticle'
 import './OneArticlePage.css'
 
 const OneArticlePage = () => {

@@ -1,0 +1,13 @@
+.edit-article-div {
+  width: 70%;
+  background-color: white;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  margin-top: 26px;
+  padding-left: 26px;
+}
+
+.edit-title {
+  display: flex;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+}

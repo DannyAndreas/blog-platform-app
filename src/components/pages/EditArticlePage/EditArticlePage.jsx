@@ -3,12 +3,11 @@ import { useDispatch, useSelector } from 'react-redux'
 import { useParams, useNavigate } from 'react-router-dom'
 import { message } from 'antd'
 
-import { updateArticle } from '../../redux/actions/articles/updateArticle'
-import { fetchArticle } from '../../redux/actions/articles/fetchArticle'
-import { clearArticle } from '../../redux/actions/articles/clearArticle'
-
-import './EditAndCreateStyle.css'
-import ArticleForm from './ArticleForm'
+import { updateArticle } from '../../../redux/actions/articles/updateArticle'
+import { fetchArticle } from '../../../redux/actions/articles/fetchArticle'
+import { clearArticle } from '../../../redux/actions/articles/clearArticle'
+import ArticleForm from '../../ui/ArticleForm/ArticleForm'
+import './EditArticlePage.css'
 
 const EditArticlePage = () => {
   const { slug } = useParams()

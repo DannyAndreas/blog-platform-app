@@ -1,18 +1,19 @@
 import React, { useEffect } from 'react'
-import './App.css'
 import { Pagination, Spin, Alert } from 'antd'
 import { BrowserRouter as Router, Routes, Route, Navigate, useParams, useNavigate } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 
-import AllArticlesPage from '../AllArticlesPage/AllArticlesPage'
-import OneArticlePage from '../OneArticlePage/OneArticlePage'
+import AllArticlesPage from '../pages/AllArticlesPage/AllArticlesPage'
+import OneArticlePage from '../pages/OneArticlePage/OneArticlePage'
 import Header from '../Header/Header'
 import { fetchArticles } from '../../redux/actions/articles/fetchArticles'
-import SignInPage from '../pages/SignInPage'
-import SignUpPage from '../pages/SignUpPage'
-import ProfilePage from '../pages/ProfilePage'
-import CreateArticlePage from '../pages/CreateArticlePage'
-import EditArticlePage from '../pages/EditArticlePage'
+import SignInPage from '../pages/SignInPage/SignInPage'
+import SignUpPage from '../pages/SignUpPage/SignUpPage'
+import ProfilePage from '../pages/ProfilePage/ProfilePage'
+import CreateArticlePage from '../pages/CreateArticlePage/CreateArticlePage'
+import EditArticlePage from '../pages/EditArticlePage/EditArticlePage'
+import NotFoundPage from '../pages/NotFoundPage/NotFoundPage'
+import './App.css'
 
 const HomePage = () => {
   const dispatch = useDispatch()
@@ -77,6 +78,7 @@ const App = () => {
           <Route path="/profile" element={auth.isAuthenticated ? <ProfilePage /> : <Navigate to="/" />} />
           <Route path="/new-article" element={auth.isAuthenticated ? <CreateArticlePage /> : <SignInPage />} />
           <Route path="/articles/:slug/edit" element={auth.isAuthenticated ? <EditArticlePage /> : <SignInPage />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </div>
     </Router>

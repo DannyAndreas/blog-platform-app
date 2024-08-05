@@ -3,9 +3,9 @@ import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import { message } from 'antd'
 
-import { createArticle } from '../../redux/actions/articles/createArticle'
-
-import ArticleForm from './ArticleForm'
+import { createArticle } from '../../../redux/actions/articles/createArticle'
+import ArticleForm from '../../ui/ArticleForm/ArticleForm'
+import './CreateArticlePage.css'
 
 const CreateArticlePage = () => {
   const dispatch = useDispatch()
